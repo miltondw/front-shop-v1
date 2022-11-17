@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+    <title>Edit account</title>
+    <style>
+        .login {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .form-container {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            width: 300px;
+        }
+
+        .logo {
+            width: 150px;
+            justify-self: center;
+            margin-bottom: 48px;
+            display: none;
+        }
+
+        .title {
+            color: var(--black);
+            font-size: var(--text-lg);
+            margin-bottom: 42px;
+            font-weight: bold;
+        }
+
+
+        .form {
+            display: grid;
+            width: 100%;
+            grid-gap: 1em;
+        }
+
+        .label {
+            color: var(--black);
+            font-size: var(--text-sm);
+            font-weight: bold;
+            display: grid;
+            grid-gap: 8px;
+        }
+
+        .input {
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .input-password {
+            background: var(--text-input-field);
+            border: 1px solid var(--text-input-field);
+        }
+
+        .btn {
+            border: 1px solid var(--hospital-green);
+            border-radius: 10px;
+            padding: 14px;
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.0001);
+            cursor: pointer;
+        }
+
+        .secondary-btn {
+            background: transparent;
+            color: var(--hospital-green);
+        }
+
+        .login-btn {
+            margin-top: 14px;
+            margin-bottom: 8px;
+        }
+
+        .primary-btn:active {
+            transform: scale(0.9);
+        }
+
+
+
+        /* Responsive */
+        @media (max-width:640px) {
+            .logo {
+                display: block;
+            }
+
+            .login-btn {
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 25px;
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <div class="form-container">
+            <img src="./images/logos/logo_yard_sale.svg" alt="logo yard sale" class="logo">
+            <h1 class="title">My account</h1>
+            <form action="/" class="form">
+                <label class="label">
+                    Name
+                    <input type="text" placeholder="your name" class="input input-password" id="name">
+                </label>
+                <label class="label">
+                    Email address
+                    <input type="email" placeholder="youremail@gmail.com" class="input input-password" id="email>
+                </label>
+                <label class=" label">
+                    password
+                    <input type="password" placeholder="********" class="input input-password" id="password">
+                </label>
+                <input type="button" value="Edit" class=" secondary-btn login-btn btn">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

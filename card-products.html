@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+
+    <title>Card Products</title>
+    <style>
+        .main-container {
+            width: 90%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            margin: auto;
+        }
+
+        .card-products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .product-img {
+            width: 240px;
+            height: 240px;
+            border-radius: 10px;
+            margin: 18px;
+        }
+
+        .card-subtitle_content {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .card-subtitle {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .prices {
+            font-weight: bold;
+        }
+
+        .icon_cart {
+            align-self: center;
+        }
+
+        /* Responsive */
+        @media (max-width:1125px) {
+            .card-products {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width:800px) {
+            .card-products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .main-container {
+                width: 100%;
+            }
+
+        }
+
+        @media (max-width:600px) {
+            .card-products {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main-container">
+        <div class="card-products">
+            <div class="card-product">
+                <img src="https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_960_720.jpg" alt="laptop"
+                    class="product-img">
+                <div class="card-subtitle_content">
+                    <p class="card-subtitle">
+                        <span class="prices">$35,00</span>
+                        Name product
+                    </p>
+                    <div class="icon_cart">
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                        <!--<img src="./images/icons/bt_added_to_cart.svg" alt="">-->
+                    </div>
+                </div>
+            </div>
+            <div class="card-product">
+                <img src="https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_960_720.jpg" alt="laptop"
+                    class="product-img">
+                <div class="card-subtitle_content">
+                    <p class="card-subtitle">
+                        <span class="prices">$35,00</span>
+                        Name product
+                    </p>
+                    <div class="icon_cart">
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                        <!--<img src="./images/icons/bt_added_to_cart.svg" alt="">-->
+                    </div>
+                </div>
+            </div>
+            <div class="card-product">
+                <img src="https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_960_720.jpg" alt="laptop"
+                    class="product-img">
+                <div class="card-subtitle_content">
+                    <p class="card-subtitle">
+                        <span class="prices">$35,00</span>
+                        Name product
+                    </p>
+                    <div class="icon_cart">
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                        <!--<img src="./images/icons/bt_added_to_cart.svg" alt="">-->
+                    </div>
+                </div>
+            </div>
+            <div class="card-product">
+                <img src="https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_960_720.jpg" alt="laptop"
+                    class="product-img">
+                <div class="card-subtitle_content">
+                    <p class="card-subtitle">
+                        <span class="prices">$35,00</span>
+                        Name product
+                    </p>
+                    <div class="icon_cart">
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                        <!--<img src="./images/icons/bt_added_to_cart.svg" alt="">-->
+                    </div>
+                </div>
+            </div>
+            <div class="card-product">
+                <img src="https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_960_720.jpg" alt="laptop"
+                    class="product-img">
+                <div class="card-subtitle_content">
+                    <p class="card-subtitle">
+                        <span class="prices">$35,00</span>
+                        Name product
+                    </p>
+                    <div class="icon_cart">
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                        <!--<img src="./images/icons/bt_added_to_cart.svg" alt="">-->
+                    </div>
+                </div>
+            </div>
+            <div class="card-product">
+                <img src="https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_960_720.jpg" alt="laptop"
+                    class="product-img">
+                <div class="card-subtitle_content">
+                    <p class="card-subtitle">
+                        <span class="prices">$35,00</span>
+                        Name product
+                    </p>
+                    <div class="icon_cart">
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                        <!--<img src="./images/icons/bt_added_to_cart.svg" alt="">-->
+                    </div>
+                </div>
+            </div>
+            <div class="card-product">
+                <img src="https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_960_720.jpg" alt="laptop"
+                    class="product-img">
+                <div class="card-subtitle_content">
+                    <p class="card-subtitle">
+                        <span class="prices">$35,00</span>
+                        Name product
+                    </p>
+                    <div class="icon_cart">
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                        <!--<img src="./images/icons/bt_added_to_cart.svg" alt="">-->
+                    </div>
+                </div>
+            </div>
+            <div class="card-product">
+                <img src="https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_960_720.jpg" alt="laptop"
+                    class="product-img">
+                <div class="card-subtitle_content">
+                    <p class="card-subtitle">
+                        <span class="prices">$35,00</span>
+                        Name product
+                    </p>
+                    <div class="icon_cart">
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                        <!--<img src="./images/icons/bt_added_to_cart.svg" alt="">-->
+                    </div>
+                </div>
+            </div>
+            <div class="card-product">
+                <img src="https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_960_720.jpg" alt="laptop"
+                    class="product-img">
+                <div class="card-subtitle_content">
+                    <p class="card-subtitle">
+                        <span class="prices">$35,00</span>
+                        Name product
+                    </p>
+                    <div class="icon_cart">
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                        <!--<img src="./images/icons/bt_added_to_cart.svg" alt="">-->
+                    </div>
+                </div>
+            </div>
+            <div class="card-product">
+                <img src="https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_960_720.jpg" alt="laptop"
+                    class="product-img">
+                <div class="card-subtitle_content">
+                    <p class="card-subtitle">
+                        <span class="prices">$35,00</span>
+                        Name product
+                    </p>
+                    <div class="icon_cart">
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                        <!--<img src="./images/icons/bt_added_to_cart.svg" alt="">-->
+                    </div>
+                </div>
+            </div>
+            <div class="card-product">
+                <img src="https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_960_720.jpg" alt="laptop"
+                    class="product-img">
+                <div class="card-subtitle_content">
+                    <p class="card-subtitle">
+                        <span class="prices">$35,00</span>
+                        Name product
+                    </p>
+                    <div class="icon_cart">
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                        <!--<img src="./images/icons/bt_added_to_cart.svg" alt="">-->
+                    </div>
+                </div>
+            </div>
+            <div class="card-product">
+                <img src="https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_960_720.jpg" alt="laptop"
+                    class="product-img">
+                <div class="card-subtitle_content">
+                    <p class="card-subtitle">
+                        <span class="prices">$35,00</span>
+                        Name product
+                    </p>
+                    <div class="icon_cart">
+                        <img src="./images/icons/bt_add_to_cart.svg" alt="">
+                        <!--<img src="./images/icons/bt_added_to_cart.svg" alt="">-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

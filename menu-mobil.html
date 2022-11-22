@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+    <title>Menu Mobil</title>
+    <!-- <style>
+        .mobil-menu {
+            width: 100px;
+            height: auto;
+            border: 1px solid var(--very-light-pink);
+            border-radius: 6px;
+            padding: 20px;
+        }
+
+        
+
+        .mobil-menu__tite {
+            text-align: end;
+        }
+
+        .mobil-menu__tite:last-child {
+            border-top: 1px solid var(--very-light-pink);
+        }
+
+        .mobil-menu__link {
+            text-decoration: none;
+            color: var(--black);
+            margin-bottom: 20px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .mobil-menu__tite:last-child>.mobil-menu__link {
+            color: var(--hospital-green);
+            font-size: var(--sm);
+            font-weight: 400;
+
+        }
+    </style> -->
+    <style>
+        ul[class^="mobil-menu__content"] {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        a[class^="mobil-menu__link"] {
+            text-decoration: none;
+            color: var(--black);
+            margin-bottom: 20px;
+            display: inline-block;
+            font-weight: bold;
+            font-size: var(--text-md);
+        }
+
+        .icon-close {
+            position: absolute;
+            right: 0;
+            top: 20px;
+        }
+
+        .menu-title {
+            font-size: var(--text-lg);
+            display: flex;
+            align-items: center;
+        }
+
+        .mobil-menu {
+            display: grid;
+            height: 100vh;
+            grid-template-rows: 10% 45% 20% 20%;
+            margin: 0 40px;
+            position: relative;
+        }
+
+        .mobil-menu__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .mobil-menu__content2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .mobil-menu__tite2 {
+            margin-top: 10px;
+        }
+
+        .mobil-menu__tite3>.mobil-menu__link3 {
+            font-size: var(--text-sm);
+            color: var(--very-light-pink);
+            font-weight: 400;
+        }
+
+        .mobil-menu__tite3:last-child>.mobil-menu__link3 {
+            color: var(--hospital-green);
+        }
+
+        .mobil-menu__content3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mobil-menu">
+        <img src="./images/icons/icon_close.png" alt="icon close" class="icon-close">
+        <h2 class="menu-title">Categories</h2>
+        <ul class="mobil-menu__content">
+            <li class="mobil-menu__tite"><a href="/" class="mobil-menu__link">All</a></li>
+            <li class="mobil-menu__tite"><a href="/" class="mobil-menu__link">Clothes</a></li>
+            <li class="mobil-menu__tite"><a href="/" class="mobil-menu__link">Electronics</a></li>
+            <li class="mobil-menu__tite"><a href="/" class="mobil-menu__link">Furniture</a></li>
+            <li class="mobil-menu__tite"><a href="/" class="mobil-menu__link">Toys</a></li>
+            <li class="mobil-menu__tite"><a href="/" class="mobil-menu__link">Others</a></li>
+        </ul>
+        <ul class="mobil-menu__content2">
+            <li class="mobil-menu__tite2"><a href="/" class="mobil-menu__link2">My orders</a></li>
+            <li class="mobil-menu__tite2"><a href="/" class="mobil-menu__link2">My account</a></li>
+        </ul>
+        <ul class="mobil-menu__content3">
+            <li class="mobil-menu__tite3"><a href="/" class="mobil-menu__link3">YourEmail@gmail.com</a></li>
+            <li class="mobil-menu__tite3"><a href="/" class="mobil-menu__link3">Sing out</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

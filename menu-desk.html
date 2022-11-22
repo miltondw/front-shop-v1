@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+    <style>
+        .desk-menu {
+            width: 100px;
+            height: auto;
+            border: 1px solid var(--very-light-pink);
+            border-radius: 6px;
+            padding: 20px;
+        }
+
+        .desk-menu__content {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .desk-menu__tite {
+            text-align: end;
+        }
+
+        .desk-menu__tite:last-child {
+            border-top: 1px solid var(--very-light-pink);
+        }
+
+        .desk-menu__link {
+            text-decoration: none;
+            color: var(--black);
+            margin-bottom: 20px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .desk-menu__tite:last-child>.desk-menu__link {
+            color: var(--hospital-green);
+            font-size: var(--sm);
+            font-weight: 400;
+
+        }
+    </style>
+    <title>Menu Desk</title>
+</head>
+
+<body>
+    <div class="desk-menu">
+        <ul class="desk-menu__content">
+            <li class="desk-menu__tite"><a href="/" class="desk-menu__link">My orders</a></li>
+            <li class="desk-menu__tite"><a href="/" class="desk-menu__link">My account</a></li>
+            <li class="desk-menu__tite"><a href="/" class="desk-menu__link">Sing out</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

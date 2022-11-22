@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+    <title>My order</title>
+    <style>
+        .my-order {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+
+        .order-content {
+            width: 300px;
+            margin-top: 3em;
+        }
+
+        .order-title {
+            font-size: var(--text-md);
+            font-weight: bold;
+            margin-bottom: 3em;
+        }
+
+        .order-info {
+            background: var(--very-light-pink);
+            display: flex;
+            border-radius: 10px;
+            font-size: var(--text-sm);
+            align-items: center;
+            justify-content: space-between;
+            font-weight: bold;
+            height: 60px;
+            padding: 0 15px;
+        }
+
+        .order-info__date {
+            margin: 0;
+        }
+
+        .order-info__articles {
+            color: var(--light-text);
+            font-weight: 300;
+            margin: 0;
+            margin-top: 5px;
+        }
+
+        .cards-order {
+            margin: 2em 0;
+        }
+
+        .card-order {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 1.5em 0;
+        }
+
+        .card-order__product {
+            display: flex;
+            align-items: center;
+        }
+
+        .card-order__img {
+            width: 70px;
+            height: 70px;
+            margin: 0;
+        }
+
+        .card-order__img>img {
+            object-fit: cover;
+            width: inherit;
+            height: inherit;
+            border-radius: 20px;
+        }
+
+        .card-order__title {
+            color: var(--very-light-pink);
+            font-size: var(--text-sm);
+            margin-left: 1em;
+            font-weight: 300;
+        }
+
+        .card-order__prices {
+            font-size: var(--text-md);
+            font-weight: bold;
+        }
+
+        @media (max-width:600px) {
+            .order-title {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my-order">
+        <div class="order-content">
+            <h2 class="order-title">
+                My order
+            </h2>
+            <div class="order-info">
+                <div class="order-info__date">
+                    <p class="order-info__date">
+                        22.11.2022
+                    </p>
+                    <p class="order-info__articles">
+                        6 articles
+                    </p>
+                </div>
+                <p class="order-info__prices">
+                    $560.00
+                </p>
+            </div>
+            <div class="cards-order">
+                <div class="card-order">
+                    <div class="card-order__product">
+                        <figure class="card-order__img">
+                            <img src="https://images.unsplash.com/photo-1607034071833-18a5b64047ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                alt="Pc gamer">
+                        </figure>
+                        <p class="card-order__title">
+                            Pc Gamer
+                        </p>
+                    </div>
+                    <p class="card-order__prices">$120,00</p>
+                </div>
+                <div class="card-order">
+                    <div class="card-order__product">
+                        <figure class="card-order__img">
+                            <img src="https://images.unsplash.com/photo-1607034071833-18a5b64047ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                alt="Pc gamer">
+                        </figure>
+                        <p class="card-order__title">
+                            Pc Gamer
+                        </p>
+                    </div>
+                    <p class="card-order__prices">$120,00</p>
+                </div>
+                <div class="card-order">
+                    <div class="card-order__product">
+                        <figure class="card-order__img">
+                            <img src="https://images.unsplash.com/photo-1607034071833-18a5b64047ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                alt="Pc gamer">
+                        </figure>
+                        <p class="card-order__title">
+                            Pc Gamer
+                        </p>
+                    </div>
+                    <p class="card-order__prices">$120,00</p>
+                </div>
+                <div class="card-order">
+                    <div class="card-order__product">
+                        <figure class="card-order__img">
+                            <img src="https://images.unsplash.com/photo-1607034071833-18a5b64047ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                alt="Pc gamer">
+                        </figure>
+                        <p class="card-order__title">
+                            Pc Gamer
+                        </p>
+                    </div>
+                    <p class="card-order__prices">$120,00</p>
+                </div>
+                <div class="card-order">
+                    <div class="card-order__product">
+                        <figure class="card-order__img">
+                            <img src="https://images.unsplash.com/photo-1607034071833-18a5b64047ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                alt="Pc gamer">
+                        </figure>
+                        <p class="card-order__title">
+                            Pc Gamer
+                        </p>
+                    </div>
+                    <p class="card-order__prices">$120,00</p>
+                </div>
+                <div class="card-order">
+                    <div class="card-order__product">
+                        <figure class="card-order__img">
+                            <img src="https://images.unsplash.com/photo-1607034071833-18a5b64047ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                alt="Pc gamer">
+                        </figure>
+                        <p class="card-order__title">
+                            Pc Gamer
+                        </p>
+                    </div>
+                    <p class="card-order__prices">$120,00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

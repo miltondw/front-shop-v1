@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+    <title>My orders</title>
+    <style>
+        .my-order {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+
+        .order-content {
+            width: 300px;
+            margin-top: 3em;
+        }
+
+        .order-title {
+            font-size: var(--text-md);
+            font-weight: bold;
+            margin-bottom: 3em;
+        }
+
+        .card-order {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            color: var(--black);
+            font-weight: bold;
+        }
+
+        .order-info__date {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .order-info__date>span:last-child {
+            color: var(--very-light-pink);
+            font-weight: 300;
+            margin-top: 6px;
+            font-size: var(--text-sm);
+        }
+
+        figure {
+            display: flex;
+            margin: 0;
+        }
+
+        figure>img {
+            margin-left: 10px;
+        }
+
+        @media (max-width:600px) {
+            .order-title {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my-order">
+        <div class="order-content">
+            <h2 class="order-title">
+                My orders
+            </h2>
+            <div class="cards-order">
+                <a href="/" class="card-order">
+                    <p class="order-info__date">
+                        <span>22.11.2022</span>
+                        <span>6 articles</span>
+                    </p>
+                    <figure>
+                        <p class="order-info__prices">
+                            $ 560.00
+                        </p>
+                        <img src="./images/icons/flechita.svg" alt="arrow">
+                    </figure>
+                </a>
+                <a href="/" class="card-order">
+                    <p class="order-info__date">
+                        <span>22.11.2022</span>
+                        <span>6 articles</span>
+                    </p>
+                    <figure>
+                        <p class="order-info__prices">
+                            $ 560.00
+                        </p>
+                        <img src="./images/icons/flechita.svg" alt="arrow">
+                    </figure>
+                </a> <a href="/" class="card-order">
+                    <p class="order-info__date">
+                        <span>22.11.2022</span>
+                        <span>6 articles</span>
+                    </p>
+                    <figure>
+                        <p class="order-info__prices">
+                            $ 560.00
+                        </p>
+                        <img src="./images/icons/flechita.svg" alt="arrow">
+                    </figure>
+                </a> <a href="/" class="card-order">
+                    <p class="order-info__date">
+                        <span>22.11.2022</span>
+                        <span>6 articles</span>
+                    </p>
+                    <figure>
+                        <p class="order-info__prices">
+                            $ 560.00
+                        </p>
+                        <img src="./images/icons/flechita.svg" alt="arrow">
+                    </figure>
+                </a> <a href="/" class="card-order">
+                    <p class="order-info__date">
+                        <span>22.11.2022</span>
+                        <span>6 articles</span>
+                    </p>
+                    <figure>
+                        <p class="order-info__prices">
+                            $ 560.00
+                        </p>
+                        <img src="./images/icons/flechita.svg" alt="arrow">
+                    </figure>
+                </a> <a href="/" class="card-order">
+                    <p class="order-info__date">
+                        <span>22.11.2022</span>
+                        <span>6 articles</span>
+                    </p>
+                    <figure>
+                        <p class="order-info__prices">
+                            $ 560.00
+                        </p>
+                        <img src="./images/icons/flechita.svg" alt="arrow">
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

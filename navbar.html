@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+    <title>Navbar</title>
+    <style>
+        .header {
+            width: 100%;
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            width: 96%;
+            margin: auto;
+        }
+
+        .navbar-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 100px;
+        }
+
+        .navbar-items {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-left: 2em;
+        }
+
+        .navbar-item__link {
+            text-decoration: none;
+            font-weight: 500;
+            font-size: var(--text-md);
+            color: var(--black);
+            margin: 0 1em;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-item {
+            height: fit-content;
+            padding: 0 1em;
+        }
+
+        .navbar-item__link:hover .navbar-item {
+            border: 1px solid var(--hospital-green);
+            color: var(--hospital-green);
+            border-radius: 10px;
+            padding: 5px 10px;
+        }
+
+        .email {
+            color: var(--light-text);
+            font-size: var(--text-sm);
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .icon-arrow {
+            transform: rotate(90deg);
+            width: 5px;
+            margin-left: 8px;
+        }
+
+        .icon-menu {
+            display: none;
+        }
+
+        .navbar-icon__cart {
+            position: relative;
+        }
+
+        .icon-shopping-notification {
+            width: 20px;
+            margin-left: 1em;
+            margin-top: 5px;
+        }
+
+        .count-car {
+            position: absolute;
+            background: var(--hospital-green);
+            color: var(--white);
+            font-size: 11px;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            top: -4px;
+            right: -4px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width:1050px) {
+            .icon-menu {
+                display: block;
+                margin-left: 1em;
+
+            }
+
+            .navbar {
+                padding: 0.5em 0;
+            }
+
+            .email,
+            .navbar-items {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <img class="icon-menu" src="./images/icons/icon_menu.svg" alt="icon menu">
+            <div class="navbar-content">
+                <img src="./images/logos/logo_yard_sale.svg" alt="logo yard sale" class="logo">
+                <ul class="navbar-items">
+                    <a href="/" class="navbar-item__link">
+                        <li class="navbar-item">All</li>
+                    </a>
+                    <a href="/" class="navbar-item__link">
+                        <li class="navbar-item">Clothes</li>
+                    </a>
+                    <a href="/" class="navbar-item__link">
+                        <li class="navbar-item">Electronics</li>
+                    </a>
+                    <a href="/" class="navbar-item__link">
+                        <li class="navbar-item">Furniture</li>
+                    </a>
+                    <a href="/" class="navbar-item__link">
+                        <li class="navbar-item">Toys</li>
+                    </a>
+                    <a href="/" class="navbar-item__link">
+                        <li class="navbar-item">Others</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="navbar-content">
+                <li class="email">
+                    <p>
+                        yourEmail@gmail.com
+                    </p>
+                    <img class="icon-arrow" src="./images/icons/flechita.svg" alt="icon arrow">
+                </li>
+                <div class="navbar-icon__cart">
+                    <img class="icon-shopping-notification" src="./images/icons/icon_shopping_cart.svg"
+                        alt="icon shopping notification">
+                    <p class="count-car">6</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>

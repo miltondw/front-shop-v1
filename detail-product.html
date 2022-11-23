@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+    <title>Detail product</title>
+    <style>
+        .detail-content {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .detail-product {
+            width: 360px;
+
+            background: var(--white);
+            height: min-content;
+            border: 1px solid var(--very-light-pink);
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .detail-product__info {
+            width: 85%;
+            margin: auto;
+            display: grid;
+            height: 100%;
+        }
+
+        .detail-content__product {
+            width: 100%;
+            border-radius: 0 0 15px 15px;
+        }
+
+        .detail-product__prices {
+            font-size: var(--text-md);
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+
+        .detail-product__title {
+            font-size: var(--text-sm);
+            margin-top: 7px;
+            color: var(--light-text);
+            font-weight: 500;
+        }
+
+        .detail-product__description {
+            font-size: var(--text-sm);
+            margin-top: 1em;
+            color: var(--light-text);
+            font-weight: 500;
+        }
+
+        .detail-product__btn {
+            width: 100%;
+            background: var(--hospital-green);
+            border: none;
+            border-radius: 5px;
+            padding: 3px;
+            display: flex;
+            color: var(--white);
+            align-items: center;
+            margin-top: 2em;
+            justify-content: center;
+        }
+
+        .detail-product__btn img {
+            margin: 0 1em;
+        }
+
+        .detail-product__close {
+            position: absolute;
+            background: var(--white);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            top: 1em;
+            left: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media(max-width:640px) {
+            .detail-product {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="detail-content">
+        <div class="detail-product">
+            <div class="detail-product__close">
+                <img src="./images/icons/icon_close.png" alt="icon close">
+            </div>
+            <img class="detail-content__product"
+                src="https://img.freepik.com/vector-premium/fresco-astronauta-relajandose-sentado-ilustracion-vector-dibujos-animados-silla-juego_509778-27.jpg?w=740"
+                alt="silla gamer">
+            <div class="detail-product__info">
+                <p class="detail-product__prices">$ 360</p>
+                <h2 class="detail-product__title">Silla gamer</h2>
+                <p class="detail-product__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                    totam facilis nobis, culpa laudantium provident iusto, a vel hic incidunt voluptatum quisquam quia
+                    assumenda, aliquam modi placeat voluptates exercitationem mollitia!</p>
+                <button class="detail-product__btn">
+                    <img src="./images/icons/bt_add_to_cart.svg" alt="icon add to cart">
+                    Add to cart
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

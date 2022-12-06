@@ -1,0 +1,163 @@
+/* Navbar */
+.header {
+  width: 100%;
+  border-bottom: 1px solid var(--very-light-pink);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 96%;
+  margin: auto;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  background: #ffff;
+}
+
+.logo {
+  width: 100px;
+}
+
+.navbar-items {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 2em;
+}
+
+.navbar-item__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: var(--text-md);
+  color: var(--black);
+  margin: 0 1em;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item {
+  height: fit-content;
+  padding: 0 1em;
+}
+
+.navbar-item__link:hover .navbar-item {
+  border: 1px solid var(--hospital-green);
+  color: var(--hospital-green);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.email {
+  color: var(--light-text);
+  font-size: var(--text-sm);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-arrow {
+  width: 5px;
+  margin-left: 8px;
+  transform: rotate(270deg);
+  transition: transform 1s;
+}
+.rotate {
+  transform: rotate(90deg);
+}
+
+.icon-menu {
+  display: none;
+}
+
+.navbar-icon__cart {
+  position: relative;
+}
+
+.icon-shopping-notification {
+  width: 20px;
+  margin-left: 1em;
+  margin-top: 5px;
+}
+
+.count-car {
+  position: absolute;
+  background: var(--hospital-green);
+  color: var(--white);
+  font-size: 11px;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  top: -4px;
+  right: -4px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1050px) {
+  .icon-menu {
+    display: block;
+    margin-left: 1em;
+  }
+
+  .navbar {
+    padding: 0.5em 0;
+  }
+
+  .email,
+  .navbar-items {
+    display: none;
+  }
+}
+/* Navbar fin */
+
+/* Menu Desk */
+.desk-menu {
+  width: 121px;
+  height: auto;
+  border: 1px solid var(--very-light-pink);
+  border-radius: 6px;
+  padding: 20px;
+  position: absolute;
+  right: 3.8em;
+  transition: transform 1s;
+  transform: translateY(-129%);
+}
+.translate {
+  transform: translateY(0);
+}
+.desk-menu__content {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.desk-menu__tite {
+  text-align: end;
+}
+
+.desk-menu__tite:last-child {
+  border-top: 1px solid var(--very-light-pink);
+}
+
+.desk-menu__link {
+  text-decoration: none;
+  color: var(--black);
+  margin-bottom: 20px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.desk-menu__tite:last-child > .desk-menu__link {
+  color: var(--hospital-green);
+  font-size: var(--sm);
+  font-weight: 400;
+}
+/* Menu Desk Fin */

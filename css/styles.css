@@ -169,8 +169,9 @@ a[class^="mobil-menu__link"] {
 
 .icon-close {
   position: absolute;
-  right: 0;
+  right: 20px;
   top: 20px;
+  cursor: pointer;
 }
 
 .menu-title {

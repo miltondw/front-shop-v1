@@ -1,23 +1,20 @@
+// Menus
 const EmailMenu = document.getElementById("email-menu");
 const DeskMenu = document.getElementById("desk-menu");
 const MobilMenu = document.getElementById("mobil-menu");
+// Icons
 const IconArrow = document.getElementById("icon-arrow");
 const IconBurger = document.getElementById("icon-burger");
-const iconClose = document.querySelector(".icon-close");
-const ShoppingCart = document.querySelector(".shopping-cart");
-const NavbarIconCart = document.querySelector(".navbar-icon__cart");
+const IconClose = document.querySelector(".icon-close");
 const IconCloseDetail = document.querySelector(".detail-product__close");
+const IconNavbarCart = document.querySelector(".navbar-icon__cart");
+//Asides
+const ShoppingCart = document.querySelector(".shopping-cart");
 const DetailContent = document.querySelector(".detail-content");
 
 EmailMenu.addEventListener("click", toggleMenuDesk);
 IconBurger.addEventListener("click", toggleMenuMobil);
-iconClose.addEventListener("click", () => {
-  MobilMenu.classList.remove("translate");
-});
-IconCloseDetail.addEventListener("click", () => {
-  DetailContent.classList.remove("scale");
-});
-NavbarIconCart.addEventListener("click", toggleShoppingCar);
+IconNavbarCart.addEventListener("click", toggleShoppingCar);
 
 function toggleMenuDesk() {
   DeskMenu.classList.toggle("translate");
@@ -47,6 +44,12 @@ function toggleShoppingCar() {
   }
   ShoppingCart.classList.toggle("translate");
 }
+IconClose.addEventListener("click", () => {
+  MobilMenu.classList.remove("translate");
+});
+IconCloseDetail.addEventListener("click", () => {
+  DetailContent.classList.remove("scale");
+});
 
 const CardProducts = document.getElementById("card-products");
 const ProductList = [

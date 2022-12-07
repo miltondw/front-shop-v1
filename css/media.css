@@ -1,7 +1,7 @@
 @media (max-width: 1050px) {
   .icon-menu {
     display: block;
-    margin-left: 1em;
+    margin-left: 6px;
   }
 
   .navbar {
@@ -18,7 +18,7 @@
 }
 @media (max-width: 640px) {
   .order-content {
-    width: 90%;
+    width: 80%;
   }
 
   .shopping-cart {

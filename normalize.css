@@ -14,8 +14,7 @@
   --text-lg: 18px;
 }
 
-body,
-html {
+body {
   font-family: "Quicksand", sans-serif;
   overflow-x: hidden;
 }
@@ -33,6 +32,7 @@ html {
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  overflow-x: hidden;
 }
 
 /* Sections

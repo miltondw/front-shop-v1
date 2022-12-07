@@ -155,6 +155,7 @@ ul[class^="mobil-menu__content"] {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-left: 15px;
 }
 
 a[class^="mobil-menu__link"] {
@@ -176,16 +177,20 @@ a[class^="mobil-menu__link"] {
   font-size: var(--text-lg);
   display: flex;
   align-items: center;
+  margin-left: 15px;
 }
 
 .mobil-menu {
   display: none;
   height: 100vh;
   grid-template-rows: 10% 45% 20% 20%;
-  margin: 0 40px;
-  position: relative;
+  margin: 0;
+  position: absolute;
   transform: translateX(-120%);
   transition: transform 1s;
+  background: #ffff;
+  width: 100%;
+  z-index: 100;
 }
 
 .mobil-menu__content {
@@ -229,6 +234,7 @@ a[class^="mobil-menu__link"] {
   right: 0;
   transform: translateX(100%);
   transition: transform 1s;
+  background: #fff;
 }
 
 .order-title__content {

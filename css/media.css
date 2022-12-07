@@ -1,0 +1,30 @@
+@media (max-width: 1050px) {
+  .icon-menu {
+    display: block;
+    margin-left: 1em;
+  }
+
+  .navbar {
+    padding: 0.5em 0;
+  }
+  .mobil-menu {
+    display: grid;
+  }
+  .email,
+  .navbar-items,
+  .desk-menu {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .order-content {
+    width: 90%;
+  }
+
+  .shopping-cart {
+    place-items: center;
+    width: 100%;
+    display: grid;
+    top: 3em;
+  }
+}

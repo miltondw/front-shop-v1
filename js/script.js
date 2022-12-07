@@ -6,27 +6,38 @@ const IconBurger = document.getElementById("icon-burger");
 const iconClose = document.querySelector(".icon-close");
 const ShoppingCart = document.querySelector(".shopping-cart");
 const NavbarIconCart = document.querySelector(".navbar-icon__cart");
+const IconCloseDetail = document.querySelector(".detail-product__close");
+const DetailContent = document.querySelector(".detail-content");
 
-EmailMenu.addEventListener("click", () => {
-  DeskMenu.classList.toggle("translate");
-  IconArrow.classList.toggle("rotate");
-  if (DeskMenu.classList.contains("translate")) {
-    ShoppingCart.classList.remove("translate");
-  }
-});
-
-IconBurger.addEventListener("click", () => {
-  MobilMenu.classList.toggle("translate");
-  if (MobilMenu.classList.contains("translate")) {
-    ShoppingCart.classList.remove("translate");
-  }
-});
-
+EmailMenu.addEventListener("click", toggleMenuDesk);
+IconBurger.addEventListener("click", toggleMenuMobil);
 iconClose.addEventListener("click", () => {
   MobilMenu.classList.remove("translate");
 });
+IconCloseDetail.addEventListener("click", () => {
+  DetailContent.classList.remove("scale");
+});
+NavbarIconCart.addEventListener("click", toggleShoppingCar);
 
-NavbarIconCart.addEventListener("click", () => {
+function toggleMenuDesk() {
+  DeskMenu.classList.toggle("translate");
+  IconArrow.classList.toggle("rotate");
+  DetailContent.classList.remove("scale");
+
+  if (DeskMenu.classList.contains("translate")) {
+    ShoppingCart.classList.remove("translate");
+  }
+}
+function toggleMenuMobil() {
+  MobilMenu.classList.toggle("translate");
+  DetailContent.classList.remove("scale");
+  if (MobilMenu.classList.contains("translate")) {
+    ShoppingCart.classList.remove("translate");
+  }
+}
+function toggleShoppingCar() {
+  DetailContent.classList.remove("scale");
+
   if (MobilMenu.classList.contains("translate")) {
     MobilMenu.classList.remove("translate");
   }
@@ -35,7 +46,7 @@ NavbarIconCart.addEventListener("click", () => {
     IconArrow.classList.remove("rotate");
   }
   ShoppingCart.classList.toggle("translate");
-});
+}
 
 const CardProducts = document.getElementById("card-products");
 const ProductList = [
@@ -76,6 +87,7 @@ const ProductList = [
     productName: "Laptop",
   },
 ];
+
 function currencyFormat(num) {
   return "$" + num.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
 }
@@ -89,6 +101,13 @@ function renderProduct(arr) {
     img.classList.add("product-img");
     img.setAttribute("src", product.image);
     img.setAttribute("alt", product.productName);
+    img.addEventListener("click", toggleDetailProduct);
+
+    function toggleDetailProduct() {
+      DetailContent.classList.add("scale");
+      ShoppingCart.classList.remove("translate");
+      DeskMenu.classList.remove("translate");
+    }
 
     const cardContent = document.createElement("div");
     cardContent.classList.add("card-subtitle_content");
@@ -113,4 +132,5 @@ function renderProduct(arr) {
     CardProducts.appendChild(productCard);
   }
 }
+
 renderProduct(ProductList);

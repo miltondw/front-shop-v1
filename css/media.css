@@ -2,6 +2,7 @@
   .icon-menu {
     display: block;
     margin-left: 6px;
+    cursor: pointer;
   }
 
   .navbar {
@@ -41,5 +42,8 @@
   }
   .card-products {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .detail-product {
+    width: 100%;
   }
 }

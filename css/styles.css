@@ -336,3 +336,46 @@ a[class^="mobil-menu__link"] {
 }
 
 /* Shopping Car Fin */
+
+/* Card Products */
+.main-container {
+  width: 90%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: auto;
+}
+
+.card-products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.card-product {
+  width: 100%;
+}
+
+.product-img {
+  width: 240px;
+  height: 240px;
+  border-radius: 10px;
+  margin: 18px;
+}
+
+.card-subtitle_content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-subtitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.prices {
+  font-weight: bold;
+}
+
+.icon_cart {
+  align-self: center;
+}
+/* Card Product fin */
